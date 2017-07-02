@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Thanks!</title>
+		<meta charset="utf-8" />
+		<meta description="A finely culled list of awesome Startup resources and tools">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script src="//load.sumome.com/" data-sumo-site-id="deaa6b4c7a68beb1de45673a5235da277dd8085473f11d4f4f2dde345b62b3dc" async="async"></script>
+	</head>
+	<body class="index">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<p><a class="logo" href="index.html">Startup<span>Resources.io</span></a></p>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							
+							<li><a href="about.html">About</a></li>
+							<li><a href="yourstartups.html">User Submitted</a></li>
+							<li><a href="//startupresources.io/blog/">Blog</a></li>
+							<li><a href="#signup" class="button special">Sign Up</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+
+					<!--
+						".inner" is set up as an inline-block so it automatically expands
+						in both directions to fit whatever's inside it. This means it won't
+						automatically wrap lines, so be sure to use line breaks where
+						appropriate (<br />).
+					-->
+					<div class="inner">
+
+						<header>
+							<h2>Thanks</h2>
+						</header>
+						<p>Thanks for letting me know about this tool or resource.<br>I'll check it out and see if it's a good fit for the site!</p>
+
+						<footer>
+						<p style="text-transform: none;">There's usually a backlog of 1 to 2 months for additions to the site.<br><br>If you'd like to skip the line please upgrade your submission for $39, and get added to the site within three business days.<br><br>You will also be in the next Startup Resources newsletter that goes out.</p>
+
+						</footer>
+						</div>
+						<div class="inner" style="margin-top: 40px;">
+						<h3>Skip the line and get listed in 3 days for $39</h3>
+						<form action="submit-thanks-for-payment.html" method="POST" id="payment-form">
+						
+							  <span class="payment-errors"></span>
+							<div class="row uniform 50%">  
+							  <div class="form-row">
+							    <label>
+							      <span>Card Number</span>
+							      <input type="text" size="20" maxlength="20" data-stripe="number"/>
+							    </label>
+							  </div>
+
+							  <div class="form-row">
+							    <label>
+							      <span>CVC</span>
+							      <input type="text" size="4" data-stripe="cvc"/>
+							    </label>
+							  </div>
+
+							  <div class="form-row">
+							    <label>
+							      <span>Expiration Month</span>
+							      <input type="text" size="2" maxlength="2" data-stripe="exp-month"/>
+							    </label>
+							    <span> / </span>
+							    <span>Expiration Year</span>
+							    <input type="text" size="4" maxlength="4" data-stripe="exp-year"/>
+							    <input type="hidden" data-key="pk_live_Qq2XmABkCh7v8cEb1aOvpNG1" name="data-amount" value="3900" data-stripe="data-amount">
+							  </div>
+							</div>
+							<div class="row uniform" style="float:right; padding-top: 20px;">
+								<div class="12u">
+									<ul class="actions">
+										<li><input type="submit" value="Speed up my submission"/></li>
+									</ul>
+									<p style="text-transform: none; font-size: .7em;">(Note that your upgraded submission is still subject to approval and<br>your description may be edited if it doesn't fit the voice of this site)</p>
+								</div>
+							</div>
+
+									</form>
+					</div>
+					<div style="margin-top: 100px;" class="inner">
+						<footer>
+						<h3>Want to join our Slack community and share resources, compare notes about your Startup, <br>and get ideas and help from other members? <a target="_blank" href="mailto:info@startupresources.io?subject=slack">Email me for an invite</a>.</h3>
+						<h3>Tell your friends about StartupResources.io by clicking the Twitter or Facebook icon</h3>
+					<ul class="icons">
+						<li><a target="_blank" href="http://twitter.com/home?status=Check%20out%20this%20pretty%20great%20list%20of%20%23startup%20resources%20http%3A%2F%2Fstartupresources.io%20-%20Thanks%20%40startupresourcs!%20" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a target="_blank" href="http://www.facebook.com/sharer.php?src=sp&u=http://startupresources.io" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+					</ul>
+						</footer>
+						<br><br>
+
+					</div>
+
+				</section>
+
+		
+
+			<!-- Footer -->
+				<footer id="footer">
+
+
+					<ul class="copyright">
+						<li>&copy; StartupResources.io</li>
+						<li><a href="http://twitter.com/startupresourcs" target="_blank" class="icon fa-twitter" style="text-decoration: none;"> @StartupResourcs</a></li>
+					</ul>
+
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+
+		<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+		<script type="text/javascript">
+  // This identifies your website in the createToken call below
+  Stripe.setPublishableKey('pk_test_1JKFjtBjjthX09iUaEfnXCr9');
+  // ...
+  var stripeResponseHandler = function(status, response) {
+      var $form = $('#payment-form');
+      if (response.error) {
+        // Show the errors on the form
+        $form.find('.payment-errors').text(response.error.message);
+        $form.find('button').prop('disabled', false);
+      } else {
+        // token contains id, last4, and card type
+        var token = response.id;
+        // Insert the token into the form so it gets submitted to the server
+        $form.append($('<input type="hidden" name="stripeToken" />').val(token));
+        // and re-submit
+        $form.get(0).submit();
+      }
+    };
+
+  jQuery(function($) {
+  $('#payment-form').submit(function(event) {
+    var $form = $(this);
+
+    // Disable the submit button to prevent repeated clicks
+    $form.find('button').prop('disabled', true);
+
+    Stripe.card.createToken($form, stripeResponseHandler);
+
+    // Prevent the form from submitting with the default action
+    return false;
+  });
+});
+</script>
+		 
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
