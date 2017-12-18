@@ -14,8 +14,8 @@ p.description {
 }
 
 a.logo {
-	text-decoration: none !important; 
-	color: #8D8081; 
+	text-decoration: none !important;
+	color: #8D8081;
 	font-size: 1.3em;
 }
 
@@ -1682,7 +1682,7 @@ a.visual {
 	}
 
 	hr {
-		width: 100%; 
+		width: 100%;
 		color: gray;
 	}
 
@@ -2251,6 +2251,14 @@ a.visual {
 			#header p span {
 				font-weight: 300;
 			}
+
+            #header p img {
+                vertical-align: middle;
+            }
+
+			#header .partner {
+                display: none;
+            }
 
 			#logo a {
 				text-decoration: none;
