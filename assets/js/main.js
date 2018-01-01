@@ -113,6 +113,38 @@
 
 			}
 
+            function getQueryVariable(variable) {
+                var query = window.location.search.substring(1);
+                var vars = query.split('&');
+                for (var i = 0; i < vars.length; i++) {
+                    var pair = vars[i].split('=');
+                    if (decodeURIComponent(pair[0]) == variable) {
+                        return decodeURIComponent(pair[1]);
+                    }
+                }
+            }
+
+            function setCookie(key, value) {
+                var expires = new Date();
+                expires.setTime(expires.getTime() + (1 * 24 * 60 * 60 * 1000));
+                document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
+            }
+
+            function getCookie(key) {
+                var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+                return keyValue ? keyValue[2] : null;
+            }
+
+            var partner = getQueryVariable('partner');
+            if (partner) {
+                setCookie("srpartner", partner.toLowerCase());
+            }
+
+            var partnerCookie = getCookie("srpartner");
+            if (partnerCookie) {
+                var element = document.getElementById(partnerCookie);
+                element.className = '';
+            }
 	});
 
 })(jQuery);
