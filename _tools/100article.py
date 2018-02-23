@@ -25,9 +25,9 @@ HEAD = '''<!DOCTYPE html>
 <meta property="og:url" content="index.html" />
 <meta property="og:site_name" content="StartupResources.io Blog" />
 <meta property="article:section" content="Uncategorized" />
-<meta property="article:published_time" content="2018-02-22T17:05:01+00:00" />
-<meta property="article:modified_time" content="2018-02-22T17:05:01+00:00" />
-<meta property="og:updated_time" content="2018-02-22T17:05:01+00:00" />
+<meta property="article:published_time" content="2018-02-23T09:49:13+00:00" />
+<meta property="article:modified_time" content="2018-02-23T09:49:13+00:00" />
+<meta property="og:updated_time" content="2018-02-23T09:49:13+00:00" />
 <!-- TODO -->
 <meta property="og:image" content="../wp-content/uploads/2015/11/Screen-Shot-2015-11-19-at-3.03.12-AM.png" />
 <meta property="og:image" content="../wp-content/uploads/2015/11/Screen-Shot-2015-11-13-at-3.51.53-AM1-1024x549.png" />
