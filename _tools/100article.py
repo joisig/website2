@@ -28,16 +28,14 @@ HEAD = '''<!DOCTYPE html>
 <meta property="article:published_time" content="2018-02-23T09:49:13+00:00" />
 <meta property="article:modified_time" content="2018-02-23T09:49:13+00:00" />
 <meta property="og:updated_time" content="2018-02-23T09:49:13+00:00" />
-<!-- TODO -->
-<meta property="og:image" content="../wp-content/uploads/2015/11/Screen-Shot-2015-11-19-at-3.03.12-AM.png" />
-<meta property="og:image" content="../wp-content/uploads/2015/11/Screen-Shot-2015-11-13-at-3.51.53-AM1-1024x549.png" />
+<meta property="og:image" content="/images/hunter-haley-424239-unsplash-tools.jpg" />
+<meta property="og:image" content="/images/hunter-haley-424239-unsplash-tools.jpg" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:description" content="In honor of our issue #100, here are the 100 tools so far that made it to be tool of the week."/>
 <meta name="twitter:title" content="100 Startup Tools of the Week"/>
 <meta name="twitter:site" content="@startupresourcs"/>
 <meta name="twitter:domain" content="StartupResources.io Blog"/>
-<!-- TODO -->
-<meta name="twitter:image" content="../wp-content/uploads/2015/11/Screen-Shot-2015-11-19-at-3.03.12-AM.png"/>
+<meta name="twitter:image" content="/images/hunter-haley-424239-unsplash-tools.jpg"/>
 <meta name="twitter:creator" content="@startupresourcs"/>
 <!-- / Yoast SEO plugin. -->
 
@@ -116,7 +114,7 @@ img.emoji {
 	<header class="post-header">
 		<h1 class="entry-title">100 Startup Tools of the Week</h1>
 		<p class="meta post-meta clearfix">
-			<span class="updated meta-date"><i class="fa fa-calendar"></i>February 22, 2018</span>
+			<span class="updated meta-date"><i class="fa fa-calendar"></i>February 23, 2018</span>
 			<span class="vcard author meta-author"><span class="fn"><i class="fa fa-user"></i>Jói</span></span>
 			<span class="meta-tags"><i class="fa fa-tag"></i><a href="../uncategorized/index.html" rel="category tag">Uncategorized</a></span>
 			<span class="meta-comments"><i class="fa fa-comment-o"></i>0</span>
@@ -124,6 +122,11 @@ img.emoji {
 	</header>
 	<div class="entry clearfix">
 
+<div class="post-thumbnail">
+<img src="/images/hunter-haley-424239-unsplash-tools.jpg" alt="" title="tools" />
+</div>
+
+<h1>100 Startup Tools of the Week</h1>
 <p>
 Today marks issue #100 of the Startup Resources newsletter, and it seemed like a
 good idea to do something in the theme of 100. Behold, this blog post! For most
