@@ -1,13 +1,10 @@
-#!/usr/bin/env python3
-
-import csv
-import sys
-
-HEAD = '''<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
 <meta charset="UTF-8">
-<title>100 Startup Tools of the Week</title>
+<title>The Tools Your Startup Should be Using and Why</title>
 <!--[if lt IE 9]>
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
@@ -16,26 +13,24 @@ HEAD = '''<!DOCTYPE html>
 <link rel="pingback" href="../xmlrpc.php" />
 
 <!-- This site is optimized with the Yoast SEO plugin v2.3.5 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="In honor of our issue #100, here are the 100 tools so far that made it to be tool of the week."/>
+<meta name="description" content="Infographic about the tools your startup should probably use, and why."/>
 <link rel="canonical" href="index.html" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="100 Startup Tools of the Week" />
-<meta property="og:description" content="In honor of our issue #100, here are the 100 tools so far that made it to be tool of the week." />
+<meta property="og:title" content="The Tools Your Startup Should be Using and Why" />
+<meta property="og:description" content="Infographic about the tools your startup should probably use, and why." />
 <meta property="og:url" content="index.html" />
 <meta property="og:site_name" content="StartupResources.io Blog" />
 <meta property="article:section" content="Uncategorized" />
-<meta property="article:published_time" content="2018-02-23T09:49:13+00:00" />
-<meta property="article:modified_time" content="2018-02-23T09:49:13+00:00" />
-<meta property="og:updated_time" content="2018-02-23T09:49:13+00:00" />
-<meta property="og:image" content="/images/hunter-haley-424239-unsplash-tools.jpg" />
-<meta property="og:image" content="/images/hunter-haley-424239-unsplash-tools.jpg" />
+<meta property="article:published_time" content="2018-05-10T14:10:00+00:00" />
+<meta property="article:modified_time" content="2018-05-10T14:10:00+00:00" />
+<meta property="og:updated_time" content="2018-05-10T14:10:00+00:00" />
+<meta property="og:image" content="/images/kotagauni-srinivas-481125-unsplash.jpg" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:description" content="In honor of our issue #100, here are the 100 tools so far that made it to be tool of the week."/>
-<meta name="twitter:title" content="100 Startup Tools of the Week"/>
+<meta name="twitter:description" content="Infographic about the tools your startup should probably use, and why."/>
+<meta name="twitter:title" content="The Tools Your Startup Should be Using and Why"/>
 <meta name="twitter:site" content="@startupresourcs"/>
 <meta name="twitter:domain" content="StartupResources.io Blog"/>
-<meta name="twitter:image" content="/images/hunter-haley-424239-unsplash-tools.jpg"/>
 <meta name="twitter:creator" content="@startupresourcs"/>
 <!-- / Yoast SEO plugin. -->
 
@@ -73,27 +68,11 @@ img.emoji {
 <meta name="generator" content="WordPress 4.8" />
 <link rel='shortlink' href='../indexe856.html?p=121' />
 <script data-cfasync="false" src="//load.sumome.com/" data-sumo-site-id="51d0b0727005b9932a68b8c308124ed7da448fb9c54bc54a5d4b1af10633183d" async></script>
-<!--BEGIN: TRACKING CODE MANAGER BY INTELLYWP.COM IN HEAD//-->
-<!-- start ConvertFox JS code ---
-<script>
-(function(d,h,w){var convertfox=w.convertfox=w.convertfox||[];convertfox.methods=['trackPageView','identify','track','setAppId'];convertfox.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);convertfox.push(e);return convertfox;}};for(var i=0;i<convertfox.methods.length;i++){var c=convertfox.methods[i];convertfox[c]=convertfox.factory(c)}s=d.createElement('script'),s.src="//d3sjgucddk68ji.cloudfront.net/convertfox.min.js",s.async=!0,e=d.getElementsByTagName(h)[0],e.appendChild(s),s.addEventListener('load',function(e){},!1),convertfox.setAppId("aznv6k3t"),convertfox.trackPageView()})(document,'head',window);
-</script>
-___ end ConvertFox JS code-->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-101988152-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<!--END: https://wordpress.org/plugins/tracking-code-manager IN HEAD//--><link rel="icon" href="../wp-content/uploads/2015/11/cropped-twitter-startupresourcesio-32x32.jpg" sizes="32x32" />
 <link rel="icon" href="../wp-content/uploads/2015/11/cropped-twitter-startupresourcesio-192x192.jpg" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="../wp-content/uploads/2015/11/cropped-twitter-startupresourcesio-180x180.jpg" />
 <meta name="msapplication-TileImage" content="http://startupresources.io/blog/wp-content/uploads/2015/11/cropped-twitter-startupresourcesio-270x270.jpg" />
 </head>
+
 <body class="post-template-default single single-post postid-121 single-format-standard">
 <div class="container">
 <header class="header-wrap">
@@ -112,35 +91,40 @@ ___ end ConvertFox JS code-->
 </header><div class="wrapper clearfix">
 	<div class="content left"><article class="post-121 post type-post status-publish format-standard hentry category-uncategorized">
 	<header class="post-header">
-		<h1 class="entry-title">100 Startup Tools of the Week</h1>
+		<h1 class="entry-title">The Tools Your Startup Should be Using and Why</h1>
 		<p class="meta post-meta clearfix">
-			<span class="updated meta-date"><i class="fa fa-calendar"></i>February 23, 2018</span>
-			<span class="vcard author meta-author"><span class="fn"><i class="fa fa-user"></i>Jói</span></span>
+			<span class="updated meta-date"><i class="fa fa-calendar"></i>May 10, 2018</span>
+			<span class="vcard author meta-author"><span class="fn"><i class="fa fa-user"></i><a href="../" title="Posts by Jói" rel="author">jói</a></span></span>
 			<span class="meta-tags"><i class="fa fa-tag"></i><a href="../uncategorized/index.html" rel="category tag">Uncategorized</a></span>
 			<span class="meta-comments"><i class="fa fa-comment-o"></i>0</span>
 		</p>
 	</header>
-	<div class="entry clearfix">
-
+<div class="entry clearfix">
 <div class="post-thumbnail">
-<img src="/images/hunter-haley-424239-unsplash-tools.jpg" alt="" title="tools" />
+<img src="/images/kotagauni-srinivas-481125-unsplash.jpg" alt="Tools. Photo by Kotagauni Srinivas on Unsplash" title="Tools. Photo by Kotagauni Srinivas on Unsplash" />
 </div>
 
-<h1>100 Startup Tools of the Week</h1>
-<p>
-Today marks issue #100 of the Startup Resources newsletter, and it seemed like a
-good idea to do something in the theme of 100. Behold, this blog post! For most
-of those 100 newsletters we’ve had a tool of the week selected (and for those
-few where we didn’t, I chose my favorite of the mentioned tools from that
-newsletter). Here is the list of all 100 super-useful tools of the week, in the
-same order they were featured in the newsletters. Enjoy!
+
+<h1>The Tools Your Startup Should be Using and Why</h1>
+
+<p>If you’re working on or for a startup, you likely have a lot on your mind: staffing, location, investments, production, service, marketing. But have you thought about your customers? Your customers, of course, are the things that are going to help open the doors, help keep them open, and help create a bigger and better company now and in the future.</p>
+
+<p>As you learn about your customers, you’ll realize that there’s a lot to keep track of—how they found out about you, what they do, what their sales history has been with you. You can’t, of course, keep track of all that in scribbled notes or in your head, or even in a spreadsheet. What you need is one of the best tech tools for startups: customer relationship management software.</p>
+
+<p>That, of course, is just one of the many pieces of the tech tool puzzle to build your startup. Why does it matter and what else is important? The graphic below can help.</p>
+
+<p>Once you're done looking through the infographic, you may want to read the $0 Subscription Startup Stack series (<a href="/blog/the-zero-subscription-startup-stack-part-one/">part 1</a>, <a href="/blog/the-zero-subscription-startup-stack-part-two/">part 2</a>) as well as the <a href="/blog/gdpr-the-quick-and-dirty-guide-to-getting-compliant-for-startups-and-small-business/">Quick and Dirty Guide to Getting GDPR Compliant for Startups and Small Business</a>.
+
+<p><strong>Click To Enlarge</strong><br /><br />
+  <a href="https://www.salesforce.com/hub/crm/tools-your-startup-should-be-using" target="_blank">
+  <img src="https://secure2.sfdcstatic.com/assets/images/hub/crm/tools-your-startup-should-be-using/the-tools-your-startup-should-be-using-and-why-embed.png" alt="The Tools Your Startup Should Be Using — And Why" width="600px" border="0" />
+</a>
 </p>
+<p>Via <a href="https://www.salesforce.com/hub/crm/" target="_blank">Salesforce</a> </p>
+
 <p>&nbsp;</p>
-'''
-
-FOOT = '''</div>
+	</div>
 	</article>
-
 	</div>
 	<aside class="sidebar sb-right">
 	<div class="sb-widget"><form role="search" method="get" id="searchform" action="http://startupresources.io/blog/">
@@ -173,7 +157,7 @@ FOOT = '''</div>
 				<a href="/blog/the-zero-subscription-startup-stack-part-one/">The $0 Subscription Startup Stack 1/4: Build something and run it</a>
 			</li>
 					<li>
-				<a href="index.html">9 Tactical Tips on how to be #1 on Product Hunt all day</a>
+				<a href="../9-tactical-tips-on-how-to-be-1-on-product-hunt-all-day/index.html">9 Tactical Tips on how to be #1 on Product Hunt all day</a>
 						</li>
 					<li>
 				<a href="../how-to-use-twitter-to-butter-up-influencers-so-that-they-will-let-you-guest-blog/index.html">How To Use Twitter To Butter Up Influencers So That They Will Let You Guest Blog</a>
@@ -190,42 +174,29 @@ FOOT = '''</div>
 				</ul>
 		</div>		</aside></div>
 <div class="copyright-wrap">
-	<p class="copyright">Copyright &copy; 2017 | <a href="http://www.mhthemes.com/" rel="nofollow">MH Purity <em>lite</em> WordPress Theme by MH Themes</a></div>
+	<p class="copyright">Copyright &copy; 2018 | <a href="http://www.mhthemes.com/" rel="nofollow">MH Purity <em>lite</em> WordPress Theme by MH Themes</a></div>
 </div>
 
-<!--BEGIN: TRACKING CODE MANAGER BY INTELLYWP.COM IN FOOTER//-->
 <!-- BEGIN PRIVY WIDGET CODE -->
 <script type='text/javascript'> var _d_site = _d_site || '4F843DF71A2DB1EEC91F14C1'; </script>
 <script src='//widget.privy.com/assets/widget.js'></script>
 <!-- END PRIVY WIDGET CODE -->
-<!--END: https://wordpress.org/plugins/tracking-code-manager IN FOOTER//--><script type='text/javascript' src='../wp-includes/js/wp-embed.minef15.js?ver=4.8'></script>
+
+<!-- start ConvertFox JS code ---
+<script>
+(function(d,h,w){var convertfox=w.convertfox=w.convertfox||[];convertfox.methods=['trackPageView','identify','track','setAppId'];convertfox.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);convertfox.push(e);return convertfox;}};for(var i=0;i<convertfox.methods.length;i++){var c=convertfox.methods[i];convertfox[c]=convertfox.factory(c)}s=d.createElement('script'),s.src="//d3sjgucddk68ji.cloudfront.net/convertfox.min.js",s.async=!0,e=d.getElementsByTagName(h)[0],e.appendChild(s),s.addEventListener('load',function(e){},!1),convertfox.setAppId("aznv6k3t"),convertfox.trackPageView()})(document,'head',window);
+</script>
+___ end ConvertFox JS code-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101988152-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
+
 </html>
-'''
-
-items = []
-categories = {}
-
-with open(sys.argv[1], 'r') as csvfile:
-    reader = csv.reader(csvfile)
-    for row in reader:
-        (num, full, category, name, url, alive, description) = row
-        items.append([num, category, name, url, description])
-        if category in categories:
-            categories[category] += 1
-        else:
-            categories[category] = 1
-
-items = items[1:]
-
-print(HEAD)
-for item in items:
-    (num, category, name, url, description) = item
-    print("<div style='display: inline-block'>")
-    print("<img class='alignleft' src='http://img.bitpixels.com/getthumbnail?code=6929743343830560&size=120&url=" + url + "'>")
-    print("#" + num + ": <a href='" + url + "' target='_blank'>" + name + "</a>: " + description)
-    print("</div>")
-    print("<p>&nbsp;</p>")
-print(FOOT)
-
-print(categories, file=sys.stderr)
