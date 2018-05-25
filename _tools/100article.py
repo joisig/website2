@@ -35,6 +35,31 @@ HEAD = '''<!DOCTYPE html>
 <meta name="twitter:title" content="100 Startup Tools of the Week"/>
 <meta name="twitter:site" content="@startupresourcs"/>
 <meta name="twitter:domain" content="StartupResources.io Blog"/>
+<!-- Begin cookieconsent.insites.com code. -->
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#ffffff",
+        "text": "#202020"
+      },
+      "button": {
+        "background": "#85D3C9",
+        "text": "#ffffff"
+      }
+    },
+    "theme": "classic",
+    "position": "bottom-right",
+    "content": {
+      "message": "This website uses cookies to generate anonymous usage statistics and to analyze audience behavior.",
+      "href": "/privacy-policy"
+    }
+})});
+</script>		<!-- End CookieConsent code. -->
+
 <meta name="twitter:image" content="/images/hunter-haley-424239-unsplash-tools.jpg"/>
 <meta name="twitter:creator" content="@startupresourcs"/>
 <!-- / Yoast SEO plugin. -->
