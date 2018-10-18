@@ -11,6 +11,10 @@ def Replace(post, template):
     result = template
     if 'content' in post:
         result = result.replace('[[[content]]]', post['content'])
+    if 'canonical' in post:
+        result = result.replace('[[[canonical]]]', post['canonical'])
+    else:
+        result = result.replace('[[[canonical]]]', 'index.html')
     result = result.replace('[[[title]]]', post['title'])
     result = result.replace('[[[path]]]', post['path'])
     result = result.replace('[[[datestamp]]]', post['datestamp'])
