@@ -141,7 +141,6 @@ ___ end ConvertFox JS code-->
 		<p class="meta post-meta clearfix">
 			<span class="updated meta-date"><i class="fa fa-calendar"></i>February 23, 2018</span>
 			<span class="vcard author meta-author"><span class="fn"><i class="fa fa-user"></i>Jói</span></span>
-			<span class="meta-tags"><i class="fa fa-tag"></i><a href="../uncategorized/index.html" rel="category tag">Uncategorized</a></span>
 			<span class="meta-comments"><i class="fa fa-comment-o"></i>0</span>
 		</p>
 	</header>
