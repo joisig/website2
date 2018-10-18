@@ -1,0 +1,40 @@
+{
+    "posts": [
+        {
+            "title": "This is a newer test",
+            "path": "this-is-a-test-newer",
+            "datestamp": "2018-10-18T14:59:00+00:00",
+            "datehuman": "October 18th, 2018",
+            "daterss": "Thu, 18 Oct 2018 14:59:00 +0000",
+            "descriptionshort": "This test is for the automated blog formatting system...",
+            "descriptionlong": "This is the actual first paragraph for inclusion in the overview. This test is for the automated blog formatting system.",
+            "author": "Jói Sigurdsson",
+            "image": "/images/how-to-pitch-3.jpg",
+            "imagealt": "How to pitch!"
+        },
+        {
+            "title": "This is a test",
+            "path": "this-is-a-test",
+            "datestamp": "2018-10-18T14:59:00+00:00",
+            "datehuman": "October 18th, 2018",
+            "daterss": "Thu, 18 Oct 2018 14:59:00 +0000",
+            "descriptionshort": "This test is for the automated blog formatting system...",
+            "descriptionlong": "This is the actual first paragraph for inclusion in the overview. This test is for the automated blog formatting system.",
+            "author": "Jói Sigurdsson",
+            "image": "/images/how-to-pitch-3.jpg",
+            "imagealt": "How to pitch!"
+        }
+    ],
+    "allposttemplates": [
+        {
+            "file": "blogindex.html",
+            "each_count": 2,
+            "outpath": "index.html"
+        },
+        {
+            "file": "feed.html",
+            "each_count": 1,
+            "outpath": "feed/index.html"
+        }
+    ]
+}
