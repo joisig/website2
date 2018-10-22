@@ -1,6 +1,18 @@
 {
     "posts": [
         {
+            "title": "My first Product Hunt launch",
+            "path": "my-first-product-hunt-launch-valentino-urbano",
+            "datestamp": "2018-10-22T21:42:00+00:00",
+            "datehuman": "October 22nd, 2018",
+            "daterss": "Thu, 22 Oct 2018 21:42:00 +0000",
+            "descriptionshort": "Valentino Urbano's inspiring story of how he launched Free My Desktop on Product Hunt.",
+            "descriptionlong": "Valentino Urbano's inspiring story of how he launched Free My Desktop on Product Hunt.",
+            "author": "Valentino Urbano",
+            "image": "/blog/my-first-product-hunt-launch-valentino-urbano/freemydesktop_screen_1.jpeg",
+            "imagealt": "Screenshot of Free My Desktop"
+        },
+        {
             "title": "Deep domain expertise but no CTO? Here's a guide to hiring one",
             "path": "deep-domain-expertise-but-no-cto-how-to-hire-one",
             "datestamp": "2018-10-19T09:11:00+00:00",
