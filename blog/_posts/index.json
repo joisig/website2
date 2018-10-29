@@ -1,6 +1,18 @@
 {
     "posts": [
         {
+            "title": "What Founders Need to Know: You Were Funded for a Liquidity Event – Start Looking",
+            "path": "what-founders-need-to-know-you-were-funded-for-a-liquidity-event-start-looking",
+            "datestamp": "2018-10-29T09:37:00+00:00",
+            "datehuman": "October 29th, 2018",
+            "daterss": "Mon, 29 Oct 2018 09:37:00 +0000",
+            "descriptionshort": "In this syndicated post, Steve Blank reminds founders who've taken funding that they need to look for potential acquirers.",
+            "descriptionlong": "In this syndicated post, Steve Blank reminds founders who've taken funding that they need to look for potential acquirers and lays out a strategy for doing this without obsessing about it.",
+            "author": "Steve Blank",
+            "image": "https://steveblank.files.wordpress.com/2016/03/petal-diagram.jpg?w=520&h=426",
+            "imagealt": "Who are the likely acquirers?"
+        },
+        {
             "title": "My first Product Hunt launch",
             "path": "my-first-product-hunt-launch-valentino-urbano",
             "datestamp": "2018-10-22T21:42:00+00:00",
