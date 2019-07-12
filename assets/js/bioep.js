@@ -140,6 +140,9 @@ window.bioEp = {
 
 	// Add the popup to the page
 	addPopup: function() {
+        if (this.added) return;
+        this.added = true;
+
 		// Add the background div
 		this.bgEl = document.createElement("div");
 		this.bgEl.id = "bio_ep_bg";
@@ -249,6 +252,16 @@ window.bioEp = {
 			obj.attachEvent("on" + event, callback);
 	},
 
+    loadCloseEvent: function() {
+        if (this.loadedCloseEvent) return;
+        this.loadedCloseEvent = true;
+
+        // Handle the popup close button
+		this.addEvent(this.closeBtnEl, "click", function() {
+			bioEp.hidePopup();
+		});
+    },
+
 	// Load event listeners for the popup
 	loadEvents: function() {
 		// Track mouseout event on document
@@ -279,10 +292,7 @@ window.bioEp = {
 				bioEp.showPopup();
 		}.bind(this));
 
-		// Handle the popup close button
-		this.addEvent(this.closeBtnEl, "click", function() {
-			bioEp.hidePopup();
-		});
+        this.loadCloseEvent();
 
 		// Handle window resizing
 		this.addEvent(window, "resize", function() {
@@ -353,4 +363,18 @@ bioEp.init({
     delay: 3,
 	cookieExp: 90,
     showOncePerSession: true
+});
+
+function handleSubscribeClick() {
+    bioEp.addPopup();
+    bioEp.loadCloseEvent();
+    bioEp.showPopup(true);
+}
+
+bioEp.domReady(function () {
+    // Add the bottom-left "subscribe" div.
+    var subscribeDiv = document.createElement("div");
+    subscribeDiv.setAttribute('style', 'position: fixed; bottom: 0; left: 0; background-color: SandyBrown; padding-left: 5px; padding-right: 5px');
+    subscribeDiv.innerHTML = '<a style="color: black;" href="javascript:void(0);" onclick="handleSubscribeClick()">Subscribe!</a>';
+    document.body.appendChild(subscribeDiv);
 });
